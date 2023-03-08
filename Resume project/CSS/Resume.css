@@ -1,0 +1,38 @@
+body {
+    background: #33353d;
+    display: grid;
+
+    color: ghostwhite;
+    margin: 0;
+}
+#portraitimg{
+    filter: grayscale();
+    max-height: 150px;
+    max-width:150px;
+    border-radius: 1rem 1.5rem 1.25rem;
+    box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.5);
+    transition: filter 0.4s ease-in-out;
+    padding: 10px;
+    border: solid ghostwhite 3px;
+
+}
+#portrait{
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+
+}
+#portrait:hover{
+    cursor: pointer;
+}
+
+#portraitimg:hover{
+    filter: none;
+}
+#name{
+    font-family: 'Chakra Petch', sans-serif;
+    box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.5);
+
+}
