@@ -1,0 +1,26 @@
+/**{*/
+/*    background-color: #ced9dd;*/
+/*}*/
+body{
+    background-color: #ced9dd;
+    font-family: 'Cormorant Garamond', serif;
+}
+#navbarImg{
+    height: 35px;
+    width: 35px;
+}
+.navbar{
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #f6f6f4;
+}
+.carousel-inner{
+   height: 70vh;
+    margin: 1em;
+}
+.carousel-inner img {
+
+    border: solid 5px antiquewhite;
+    max-width: 70%;
+    max-height: 80%;
+    margin: auto; /* center the image horizontally */
+}
