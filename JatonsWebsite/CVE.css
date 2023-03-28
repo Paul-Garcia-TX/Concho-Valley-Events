@@ -24,3 +24,7 @@ body{
     max-height: 80%;
     margin: auto; /* center the image horizontally */
 }
+#weatherInfo img{
+    height: 50px;
+    width: 50px;
+}
