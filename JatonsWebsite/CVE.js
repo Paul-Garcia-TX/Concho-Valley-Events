@@ -34,3 +34,15 @@ function fetchWeatherData(zipCode){
 
 fetchWeatherData(zipCode);
 
+$.get('events.json').done(function (data){
+    let eventInfo = "";
+
+    const firstData= data[0];
+
+    eventInfo += '<h4>' + firstData.title + '</h4>';
+    eventInfo += '<h6>' + firstData.date + '</h6>';
+    eventInfo += '<p>' + firstData.desc + '</p>';
+
+
+    $("#firstCard").append(eventInfo);
+})
