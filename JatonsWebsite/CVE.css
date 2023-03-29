@@ -28,3 +28,19 @@ body{
     height: 50px;
     width: 50px;
 }
+.card{
+    width: 1000px;
+    border: solid 2px black;
+}
+.card img {
+    margin-left: .5em;
+    border: black 1px solid;
+    border-radius: 20px;
+    height: 200px;
+    width: 300px;
+    margin-top: 125px;
+}
+#icons area .fa{
+
+
+}
