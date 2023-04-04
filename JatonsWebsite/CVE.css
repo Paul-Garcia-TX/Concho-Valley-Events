@@ -29,7 +29,7 @@ body{
     width: 50px;
 }
 .card{
-    width: 1000px;
+    width: 800px;
     border: solid 2px black;
 }
 .card img {
@@ -39,8 +39,13 @@ body{
     height: 200px;
     width: 300px;
     margin-top: 125px;
+    margin-bottom: 100px;
 }
 #icons area .fa{
 
 
+}
+.card-body{
+    margin-top: 100px;
+    border: solid red 1px;
 }
