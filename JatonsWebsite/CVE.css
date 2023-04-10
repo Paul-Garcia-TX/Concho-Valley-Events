@@ -70,5 +70,15 @@ body{
 #calendar{
     background-color: white;
     height: 400px;
-    width: 600px;
+    width: 620px;
+}
+#eventCardsArea{
+    margin: 4em;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#cardscontainer{
+    display: flex;
+    justify-content: space-around ;
 }

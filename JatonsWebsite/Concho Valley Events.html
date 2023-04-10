@@ -31,7 +31,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
+                    <a class="nav-link" href="#cardsRow">Events</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled">About Us</a>
@@ -63,33 +63,44 @@
 
 <!--header and navbar-->
 <main>
-    <section>
-<!--carousel-->
-        <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="4000">
-                    <img src="img/San-Angelo-TX.jpg" class="d-block w-100" alt="...">
+    <section class="text-center pt-lg-0 hero-home" id="hero">
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center" style="background: url(img/San-Angelo-TX.jpg)">
+                    <div class="container text-white py-5 my-5 index-forward">
+                        <h1 class="text-uppercase text-xl mt-5">Family Fun</h1>
+                        <div class="row">
+                            <div class="col-lg-7 mx-auto">
+                                <p class="lead">Join us for a fun-filled day in downtown! Bring your family and friends to enjoy delicious food from a variety of vendors while you stroll through the streets, taking in the sights and sounds of our community.</p><a class="btn btn-primary px-4" href="#cardsRow">Read More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="4000">
-                    <img src="img/san-angelo-railroad-museum.jpeg" class="d-block w-100" alt="...">
+                <div class="swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center" style="background: url(img/pba2.jpg)">
+                    <div class="container text-white py-5 my-5 index-forward">
+                        <h1 class="text-uppercase text-xl mt-5">Arts & Culture</h1>
+                        <div class="row">
+                            <div class="col-lg-7 mx-auto">
+                                <p class="lead">Come out and support local artists and vendors at our community event! You'll have the chance to browse and shop unique, handmade products from a variety of talented artisans. From jewelry and pottery to paintings and photography, there will be something for everyone. You'll also have the opportunity to connect with the creators themselves and learn more about their craft.</p><a class="btn btn-primary px-4" href="#cardsRow">Read More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="4000">
-                    <img src="img/pba.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="4000">
-                    <img src="img/pba2.jpg" class="d-block w-100" alt="...">
+                <div class="swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center" style="background: url(img/satxFWF.jpg)">
+                    <div class="container text-white py-5 my-5 index-forward">
+                        <h1 class="text-uppercase text-xl mt-5">Good Eats</h1>
+                        <div class="row">
+                            <div class="col-lg-7 mx-auto">
+                                <p class="lead">Visit your local church and become a part of the flock by contributing to the community in any way you possibly can.</p><a class="btn btn-primary px-4" href="text.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="swiper-button-next swiper-nav-custom d-none d-lg-block"></div>
+            <div class="swiper-button-prev swiper-nav-custom d-none d-lg-block"></div>
+            <div class="swiper-pagination py-3 d-block d-lg-none"></div>
         </div>
-<!--carousel-->
     </section>
 <section id="eventsHeader">
     <div class="container">
@@ -100,12 +111,13 @@
 
 </section>
 <section id="eventCardsArea">
-    <div class="container">
+    <div id="calendar"></div>
+    <div id="cardscontainer" class="container">
         <div id="cardsRow" class="row">
 
         </div>
     </div>
-    <div id="calendar"></div>
+
 </section>
 
 
