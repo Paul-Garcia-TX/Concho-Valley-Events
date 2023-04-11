@@ -2,33 +2,34 @@
 /*    background-color: #ced9dd;*/
 /*}*/
 body{
-    background-color: #ced9dd;
+    background-color: #7B8E9F;
     font-family: 'Cormorant Garamond', serif;
 }
 #navbarImg{
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
+    background-color: transparent;
 }
 .navbar{
     font-family: 'Cormorant Garamond', serif;
-    background-color: #f6f6f4;
-    height: 80px;
-}
-.carousel-inner{
-   height: 70vh;
-    margin: 1em;
-}
-.carousel-inner img {
+    background:linear-gradient(180deg, #A2B3C2, #7B8E9F);
 
-    border: solid 5px antiquewhite;
-    max-width: 70%;
-    max-height: 80%;
-    margin: auto; /* center the image horizontally */
+    height: 80px;
+    text-decoration-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
 
 .card{
     width: 800px;
-    border: solid 2px black;
+    height: 400px;
+    border: solid 4px black;
+    background-color: #C1CDD3;
 }
 .card img {
     margin-left: .5em;
@@ -39,14 +40,7 @@ body{
     margin-top: 125px;
     margin-bottom: 100px;
 }
-#icons area .fa{
 
-
-}
-/*.card-body{*/
-/*    margin-top: 100px;*/
-
-/*}*/
 #weatherInfo{
 
     max-height: 50px;
@@ -81,4 +75,24 @@ body{
 #cardscontainer{
     display: flex;
     justify-content: space-around ;
+}
+/*carousel*/
+.carousel-caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 50px*/
+    border: solid red 2px;
+    color: gold;
+    font-size: 20px;
+    text-outline: black;
+    margin-bottom: 450px;
+    opacity: 1;
+    /*background-color: #A2B3C2;*/
+}
+.carousel-caption h5{
+    font-size: 40px;
+}
+.carousel-item{
+    opacity: .8;
 }

@@ -18,9 +18,9 @@
 <body>
 
 <!--Header and navbar-->
-<nav class="navbar sticky-top navbar-expand-lg ">
+<nav class="navbar navbar-expand-lg ">
     <div id="navbarBG" class="container-fluid">
-        <img id="navbarImg" src="img/bluebonnet.png">
+        <img id="navbarImg" src="img/pngwing.com.png">
         <a class="navbar-brand" href="#">Concho Valley Events</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -63,43 +63,45 @@
 
 <!--header and navbar-->
 <main>
-    <section class="text-center pt-lg-0 hero-home" id="hero">
-        <div class="swiper hero-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center" style="background: url(img/San-Angelo-TX.jpg)">
-                    <div class="container text-white py-5 my-5 index-forward">
-                        <h1 class="text-uppercase text-xl mt-5">Family Fun</h1>
-                        <div class="row">
-                            <div class="col-lg-7 mx-auto">
-                                <p class="lead">Join us for a fun-filled day in downtown! Bring your family and friends to enjoy delicious food from a variety of vendors while you stroll through the streets, taking in the sights and sounds of our community.</p><a class="btn btn-primary px-4" href="#cardsRow">Read More</a>
-                            </div>
-                        </div>
+
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-slide="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/satxFWF.jpg" class="d-block w-100" alt="Food and Wine Festival">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Good Eats!</h5>
+                        <p>Join us for a deliciously fun event featuring the best local food truck vendors in town! Discover new flavors and satisfy your cravings with a wide variety of mouth-watering dishes, from juicy burgers to savory tacos, sweet treats, and more. Enjoy a festive atmosphere with live music, games, and entertainment for the whole family. Come hungry and leave happy at our ultimate foodie extravaganza</p>
                     </div>
                 </div>
-                <div class="swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center" style="background: url(img/pba2.jpg)">
-                    <div class="container text-white py-5 my-5 index-forward">
-                        <h1 class="text-uppercase text-xl mt-5">Arts & Culture</h1>
-                        <div class="row">
-                            <div class="col-lg-7 mx-auto">
-                                <p class="lead">Come out and support local artists and vendors at our community event! You'll have the chance to browse and shop unique, handmade products from a variety of talented artisans. From jewelry and pottery to paintings and photography, there will be something for everyone. You'll also have the opportunity to connect with the creators themselves and learn more about their craft.</p><a class="btn btn-primary px-4" href="#cardsRow">Read More</a>
-                            </div>
-                        </div>
+                <div class="carousel-item">
+                    <img src="img/pba.jpg" class="d-block w-100" alt="Paint Brush Alley">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Arts and Culture</h5>
+                        <p>Come out and support local artists and vendors at our community event! You'll have the chance to browse and shop unique, handmade products from a variety of talented artisans. From jewelry and pottery to paintings and photography, there will be something for everyone. You'll also have the opportunity to connect with the creators themselves and learn more about their craft.</p>
                     </div>
                 </div>
-                <div class="swiper-slide hero-slide bg-cover py-5 with-border-image d-flex align-items-center" style="background: url(img/satxFWF.jpg)">
-                    <div class="container text-white py-5 my-5 index-forward">
-                        <h1 class="text-uppercase text-xl mt-5">Good Eats</h1>
-                        <div class="row">
-                            <div class="col-lg-7 mx-auto">
-                                <p class="lead">Visit your local church and become a part of the flock by contributing to the community in any way you possibly can.</p><a class="btn btn-primary px-4" href="text.html">Read More</a>
-                            </div>
-                        </div>
+                <div class="carousel-item">
+                    <img src="img/festival.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-next swiper-nav-custom d-none d-lg-block"></div>
-            <div class="swiper-button-prev swiper-nav-custom d-none d-lg-block"></div>
-            <div class="swiper-pagination py-3 d-block d-lg-none"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 <section id="eventsHeader">

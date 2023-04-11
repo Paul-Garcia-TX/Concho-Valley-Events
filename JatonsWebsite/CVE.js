@@ -53,8 +53,8 @@ function renderEvent(event, id){
     eventInfo += '</div>';
     eventInfo += '<div class="col-md-8">';
     eventInfo += '<div class="card-body">'
-    eventInfo += '<h4>' + event.title + '</h4>';
-    eventInfo += '<h6> When: ' + event.date + '</h6>';
+    eventInfo += '<h2>' + event.title + '</h2>';
+    // eventInfo += '<h6> When: ' + event.date + '</h6>';
     eventInfo += '<p> Where: <a href="' + event.location + '" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a></p>';
     eventInfo += '<p>' + event.desc + '</p>';
     eventInfo += '<div id="icons area">';
