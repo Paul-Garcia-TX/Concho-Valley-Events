@@ -45,7 +45,9 @@ $.get('events.json').done(function (data){
 function renderEvent(event, id){
     let eventInfo = "";
 
-    eventInfo += '<div class="col" id="' + id + '">';
+
+    eventInfo += '<div class="col">'
+    eventInfo += '<div  id="' + id + '">';
     eventInfo += '<div class="card">';
     eventInfo += '<div class="row g-0">';
     eventInfo += '<div class="col-md-4">';
@@ -70,6 +72,7 @@ function renderEvent(event, id){
     eventInfo += '<a href="'+ event.website + '" target="_blank">';
     eventInfo += '<i class="fa-solid fa-info" style="margin: 1em;"></i>';
     eventInfo += '</a>';
+    eventInfo += '</div>';
     eventInfo += '</div>';
     eventInfo += '</div>';
     eventInfo += '</div>';

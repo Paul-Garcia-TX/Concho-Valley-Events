@@ -26,8 +26,8 @@ body{
 
 
 .card{
-    width: 800px;
-    height: 400px;
+    /*width: 800px;*/
+    /*height: 400px;*/
     border: solid 4px black;
     background-color: #C1CDD3;
 }
@@ -64,7 +64,7 @@ body{
 #calendar{
     background-color: white;
     height: 400px;
-    width: 620px;
+    /*width: 620px;*/
 }
 #eventCardsArea{
     margin: 4em;
