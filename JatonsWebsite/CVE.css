@@ -82,17 +82,90 @@ body{
     justify-content: center;
     align-items: center;
     /*height: 50px*/
-    border: solid red 2px;
-    color: gold;
+
+    color: white;
     font-size: 20px;
     text-outline: black;
     margin-bottom: 450px;
     opacity: 1;
     /*background-color: #A2B3C2;*/
 }
-.carousel-caption h5{
-    font-size: 40px;
+.carousel-caption h1{
+    font-size: 60px;
 }
 .carousel-item{
     opacity: .8;
+}
+@keyframes tipsy {
+0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+}
+100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+}
+}
+.carousel-item img{
+    height: 30%;
+}
+
+
+.carousel-item h1  {
+    /*color: #fffbf1;*/
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 20vh;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: 'Great Vibes', cursive;
+}
+
+.carousel-item h1:before,
+.carousel-item h1:after {
+    content: '';
+    padding: .9em .4em;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border: 10px solid #004AF0;
+    border-radius: 15px;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+.carousel-item h1:before {
+    border-color: #3A6FF0 #3A6FF0  rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+.carousel-item h1:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #004AF0 #004AF0;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+.carousel-item #secondImage:before {
+    border-color: #FBAACA #FBAACA  rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+.carousel-item #secondImage:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #F37CB6 #F37CB6;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+
+.carousel-item #thirdImage:before {
+    border-color: #5f9953 #6bac5e  rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+.carousel-item #thirdImage:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #3f7b4c #275e2d;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
 }
