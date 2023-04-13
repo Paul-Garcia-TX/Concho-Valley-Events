@@ -44,15 +44,15 @@ function renderEvent(event, id){
     let eventInfo = "";
 
 
-    eventInfo += '<div class="col">'
-    eventInfo += '<div  id="' + id + '">';
-    eventInfo += '<div class="card">';
+    // eventInfo += '<div class="col">'
+    // eventInfo += '<div  id="' + id + '">';
+    eventInfo += '<div class="card p-3">';
     eventInfo += '<div class="row g-0">';
-    eventInfo += '<div class="col">';
+    eventInfo += '<div class="col-12 col-md">';
     eventInfo += '<img src="' + event.image + '" class="img-fluid rounded-start" alt="eventImage"> ';
-    eventInfo += '</div>';
-    eventInfo += '<div class="col-md-8">';
-    eventInfo += '<div class="card-body">'
+    eventInfo += '</div>'; // end of image col
+    eventInfo += '<div class="col-12 col-md p-3">';
+    // eventInfo += '<div class="card-body">'
     eventInfo += '<h2>' + event.title + '</h2>';
 
     eventInfo += '<p> Where: <a href="' + event.location + '" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a></p>';
@@ -74,7 +74,7 @@ function renderEvent(event, id){
     eventInfo += '</div>';
     eventInfo += '</div>';
     eventInfo += '</div>';
-    eventInfo += '</div>';
+    // eventInfo += '</div>';
 
     return eventInfo;
 }

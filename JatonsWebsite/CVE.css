@@ -26,16 +26,15 @@ body{
     margin: 2em;
     border: solid 4px black;
     background-color: #C1CDD3;
-    height: 40vh;
-    width: 60vh;
+
     font-size: 18px;
-    /*color: whitesmoke;*/
+
 }
 .card img {
-    margin-left: .5em;
+    /*margin-left: .5em;*/
     border: black 1px solid;
     border-radius: 20px;
-    height: 20vh;
+    height: 30vh;
     width: 40vw;
     margin-top: 125px;
     margin-bottom: 100px;
