@@ -216,7 +216,9 @@ body{
 
     }
     .card img {
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: black 1px solid;
         border-radius: 20px;
         height: 30vh;
@@ -276,7 +278,7 @@ body{
 }
 }
 .carousel-item img{
-    height: 75vh;
+    height: 55vh;
     width: 100vw;
 }
 
@@ -354,7 +356,7 @@ body{
     box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
 }
 #whatsgoingon {
-
+    /*padding: 1em;*/
     margin-top: 4em;
     color: whitesmoke;
     font-size: 28px;
@@ -365,7 +367,17 @@ body{
 }
 .col-12{
     width: 65vw;
+    display: flex;
 }
+.col-12 img{
+    margin: auto;
+}
+.col-12.col-md{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 
 
