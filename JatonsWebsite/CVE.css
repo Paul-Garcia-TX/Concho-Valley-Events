@@ -1,102 +1,106 @@
+@media screen and (min-width: 768px) {
+    body {
+        background-color: #7B8E9F;
+        font-family: 'Cormorant Garamond', serif;
+        color: whitesmoke;
+    }
 
-body{
-    background-color: #7B8E9F;
-    font-family: 'Cormorant Garamond', serif;
-    color: whitesmoke;
-}
-#navbarImg{
-    height: 45px;
-    width: 45px;
-    background-color: transparent;
-}
-.navbar{
-    font-family: 'Cormorant Garamond', serif;
-    background:linear-gradient(180deg, #A2B3C2, #7B8E9F);
+    #navbarImg {
+        height: 45px;
+        width: 45px;
+        background-color: transparent;
+    }
 
-    height: 80px;
-    color: antiquewhite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .navbar {
+        font-family: 'Cormorant Garamond', serif;
+        background: linear-gradient(180deg, #A2B3C2, #7B8E9F);
 
-
-
-.card{
-    margin: 2em;
-    border: solid 4px black;
-    background-color: #C1CDD3;
-
-    font-size: 18px;
-
-}
-.card img {
-
-    border: black 1px solid;
-    border-radius: 20px;
-    height: 30vh;
-    width: 50vw;
-    margin-top: 125px;
-    margin-bottom: 100px;
-}
-
-#weatherInfo{
-
-    max-height: 50px;
-
-    margin: auto;
-
-}
-#weatherInfo img{
-    height: 40px;
-    width: 40px;
-    margin: auto;
-    justify-content: space-evenly;
-    align-items: center;
-}
-#weatherInfoBody{
-    display: inline-flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
+        height: 80px;
+        color: antiquewhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 
-#eventCardsArea{
-    margin: 4em;
-    display: flex;
-    justify-content: space-evenly;
+    .card {
+        margin: 2em;
+        border: solid 4px black;
+        background-color: #C1CDD3;
 
-}
-#cardscontainer{
-    display: flex;
-    justify-content: space-around ;
-}
-/*carousel*/
-.carousel-caption{
+        font-size: 18px;
 
-    margin-bottom: 450px;
-}
-.carousel-caption h1{
-    font-size: 60px;
-}
-.carousel-item{
-    opacity: .8;
-}
-@keyframes tipsy {
-0 {
+    }
+
+    .card img {
+
+        border: black 1px solid;
+        border-radius: 20px;
+        height: 30vh;
+        width: 50vw;
+        margin-top: 125px;
+        margin-bottom: 100px;
+    }
+
+    #weatherInfo {
+
+        max-height: 50px;
+
+        margin: auto;
+
+    }
+
+    #weatherInfo img {
+        height: 40px;
+        width: 40px;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #weatherInfoBody {
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+    #eventCardsArea {
+        margin: 4em;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    #cardscontainer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*carousel*/
+    .carousel-caption {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+
+    @keyframes tipsy {
+0% {
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
 }
 100% {
     transform: translateX(-50%) translateY(-50%) rotate(360deg);
 }
 }
-.carousel-item img{
+
+.carousel-item img {
     height: 75vh;
     width: 100vw;
 }
 
 
-.carousel-item h1  {
+.carousel-item h1 {
 
     text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
     font-size: 20vh;
@@ -126,9 +130,11 @@ body{
     animation: 10s infinite alternate ease-in-out tipsy;
 
 }
-.carousel-item #firstImage{
-    color:#FC2AEC;
+
+.carousel-item #firstImage {
+    color: #FC2AEC;
 }
+
 .carousel-item h1:before {
 
     border-color: #acf0e8 #baf2ec rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
@@ -141,11 +147,12 @@ body{
 }
 
 .carousel-item #secondImage:before {
-    border-color: #FBAACA #FBAACA  rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-color: #FBAACA #FBAACA rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
     z-index: -1;
 
 }
-.carousel-item #secondImage{
+
+.carousel-item #secondImage {
     color: #BDD0C1;
     box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
 }
@@ -155,12 +162,13 @@ body{
     box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
 }
 
-.carousel-item #thirdImage{
+.carousel-item #thirdImage {
     color: #ffd700;
     box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
 }
+
 .carousel-item #thirdImage:before {
-    border-color: #7d9e81 #678e6c  rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-color: #7d9e81 #678e6c rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
     z-index: -1;
 }
 
@@ -168,21 +176,25 @@ body{
     border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #527e56 #275e2d;
     box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
 }
+
 #whatsgoingon {
 
     margin-top: 4em;
     color: whitesmoke;
     font-size: 28px;
 }
-#whatsgoingon h1{
+
+#whatsgoingon h1 {
     display: flex;
     justify-content: center;
 }
-.col-12{
+
+.col-12 {
     width: 65vw;
 }
 
-@media (min-height: 680px), screen and (orientation: portrait) {
+}
+@media (min-height: 880px), screen and (orientation: portrait) {
 
     body{
         background-color: #7B8E9F;
@@ -194,16 +206,7 @@ body{
         width: 45px;
         background-color: transparent;
     }
-    /*.navbar{*/
-    /*    font-family: 'Cormorant Garamond', serif;*/
-    /*    background:linear-gradient(180deg, #A2B3C2, #7B8E9F);*/
 
-    /*    height: 80px;*/
-    /*    color: antiquewhite;*/
-    /*    display: flex;*/
-    /*    align-items: center;*/
-    /*    justify-content: center;*/
-    /*}*/
 
 .navbar-collapse.collapse.show{
 background-color: #7B8E9F;
@@ -213,11 +216,8 @@ background-color: #7B8E9F;
     margin: auto;
     border: solid 1px black;
     text-align: center;
-    /*justify-content: center;*/
-    /*align-items: center;*/
-}
-}
 
+}
     .card{
         margin: 2em;
         border: solid 4px black;
@@ -272,11 +272,18 @@ background-color: #7B8E9F;
         justify-content: space-around ;
     }
     /*carousel*/
-
+    .carousel-caption{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 30vw; !important
+    height: 35vh; !important
+    }
 
 
     @keyframes tipsy {
-0 {
+0% {
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
 }
 100% {
@@ -289,6 +296,7 @@ background-color: #7B8E9F;
 }
 
 .carousel-container{
+    /*position: relative;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,10 +308,10 @@ background-color: #7B8E9F;
     font-weight: bold;
     text-decoration: none;
     letter-spacing: -3px;
-    margin: 0;
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
+    /*margin: 0;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-family: 'Lora', serif;
 }
@@ -385,6 +393,9 @@ background-color: #7B8E9F;
 .col-12.col-md{
     display: flex;
     flex-direction: column;
+}
+
+
 }
 
 
