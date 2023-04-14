@@ -31,11 +31,11 @@ body{
 
 }
 .card img {
-    /*margin-left: .5em;*/
+
     border: black 1px solid;
     border-radius: 20px;
     height: 30vh;
-    width: 40vw;
+    width: 50vw;
     margin-top: 125px;
     margin-bottom: 100px;
 }
@@ -178,3 +178,195 @@ body{
     display: flex;
     justify-content: center;
 }
+.col-12{
+    width: 65vw;
+}
+
+@media (min-height: 680px), screen and (orientation: portrait) {
+
+    body{
+        background-color: #7B8E9F;
+        font-family: 'Cormorant Garamond', serif;
+        color: whitesmoke;
+    }
+    #navbarImg{
+        height: 45px;
+        width: 45px;
+        background-color: transparent;
+    }
+    .navbar{
+        font-family: 'Cormorant Garamond', serif;
+        background:linear-gradient(180deg, #A2B3C2, #7B8E9F);
+
+        height: 80px;
+        color: antiquewhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .card{
+        margin: 2em;
+        border: solid 4px black;
+        background-color: #C1CDD3;
+
+        font-size: 18px;
+
+    }
+    .card img {
+
+        border: black 1px solid;
+        border-radius: 20px;
+        height: 30vh;
+        width: 50vw;
+        margin-top: 125px;
+        margin-bottom: 100px;
+    }
+
+    #weatherInfo{
+
+        max-height: 50px;
+
+        margin: auto;
+
+    }
+    #weatherInfo img{
+        height: 40px;
+        width: 40px;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #weatherInfoBody{
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+    #eventCardsArea{
+        margin: 4em;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    #cardscontainer{
+        display: flex;
+        justify-content: space-around ;
+    }
+    /*carousel*/
+    .carousel-caption{
+
+        margin-bottom: 450px;
+    }
+    .carousel-caption h1{
+        font-size: 60px;
+    }
+    .carousel-item{
+        opacity: .8;
+    }
+    @keyframes tipsy {
+0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+}
+100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+}
+}
+.carousel-item img{
+    height: 75vh;
+    width: 100vw;
+}
+
+
+.carousel-item h1  {
+
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 20vh;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: 'Lora', serif;
+}
+
+.carousel-item h1:before,
+.carousel-item h1:after {
+    content: '';
+    padding: .9em .4em;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border: 11px solid;
+    border-radius: 15px;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
+
+}
+.carousel-item #firstImage{
+    color:#FC2AEC;
+}
+.carousel-item h1:before {
+
+    border-color: #acf0e8 #baf2ec rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+.carousel-item h1:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #90ebe1 #75E6DA;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+.carousel-item #secondImage:before {
+    border-color: #FBAACA #FBAACA  rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+
+}
+.carousel-item #secondImage{
+    color: #BDD0C1;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+.carousel-item #secondImage:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #F37CB6 #F37CB6;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+.carousel-item #thirdImage{
+    color: #ffd700;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+.carousel-item #thirdImage:before {
+    border-color: #7d9e81 #678e6c  rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+.carousel-item #thirdImage:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #527e56 #275e2d;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+#whatsgoingon {
+
+    margin-top: 4em;
+    color: whitesmoke;
+    font-size: 28px;
+}
+#whatsgoingon h1{
+    display: flex;
+    justify-content: center;
+}
+.col-12{
+    width: 65vw;
+}
+
+
+
+
