@@ -51,7 +51,7 @@ function renderEvent(event, id){
     eventInfo += '<div class="col-12 col-md">';
     eventInfo += '<img src="' + event.image + '" class="img-fluid rounded-start" alt="eventImage"> ';
     eventInfo += '</div>'; // end of image col
-    eventInfo += '<div class="col-12 col-md p-3">';
+    eventInfo += '<div class="card-body col-8 col-md p-1">';
     // eventInfo += '<div class="card-body">'
     eventInfo += '<h2>' + event.title + '</h2>';
 
