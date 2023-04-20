@@ -195,7 +195,9 @@
 .col-12 {
     width: 65vw;
 }
-
+footer{
+    margin: 4em;
+}
 }
 @media (min-height: 880px), screen and (orientation: portrait) {
 
