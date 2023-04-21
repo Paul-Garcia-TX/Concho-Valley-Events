@@ -407,7 +407,9 @@ background-color: #7B8E9F;
     display: flex;
     flex-direction: column;
 }
-
+    footer{
+        margin: 4em;
+    }
 
 }
 
