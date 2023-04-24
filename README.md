@@ -1,2 +1,3 @@
-# Side-Projects
-A spot where I'm just working on stuff to exercise skills learned
+Concho valley events
+is a page generated to give out info for certain events going on in  tom green county
+
